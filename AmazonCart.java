@@ -14,7 +14,7 @@ public class AmazonCart{
 
 
 
-      WebDriverManager.chromedriver().setup();
+       WebDriverManager.chromedriver().setup();
       WebDriver driver = new ChromeDriver();
           //driver.manage().window().maximize();
           driver.get("http://www.amazon.in");
@@ -26,15 +26,16 @@ public class AmazonCart{
           WebElement button = driver.findElement(By.id("nav-search-submit-button"));
           button.click();
 
-          WebElement Phone = driver.findElement(By.linkText("Apple iPhone 13 (512GB) - Midnight"));
+          WebElement Phone = driver.findElement(By.partialLinkText("Apple iPhone 13"));
           Phone.click();
 
        Thread.sleep(3000);
 
-          WebElement cartButton = driver.findElement(By.id("add-to-cart-button"));
+          WebElement cartButton = driver.findElement(By.xpath("//span[@id='submit.add-to-cart']"));
           cartButton.click();
 
           driver.quit();
+
 
    }
 
