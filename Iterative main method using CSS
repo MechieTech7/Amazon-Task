@@ -1,0 +1,5 @@
+ //driver.findElement(By.linkText("Mobiles")).click();
+        //driver.findElement(By.cssSelector(".a-spacing-micro:nth-child(5) .a-color-base > span")).click();
+        //driver.findElement(By.cssSelector(".a-row:nth-child(2) > .celwidget:nth-child(1) .octopus-pc-item:nth-child(2) .a-link-normal:nth-child(1) > .a-section:nth-child(1) > .a-section:nth-child(1)")).click();
+       // driver.findElement(By.id("add-to-cart-button")).click();
+       // driver.close();
